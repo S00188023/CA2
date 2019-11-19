@@ -9,18 +9,22 @@ namespace CA2
     public enum ActivityType { Air, Water, Land}
     class Activity : IComparable
     {
-        public string name { get; set; }
-        public DateTime activityDate { get; set; }
-        public decimal cost { get; set; }
-        public Activity typeOfActivity { get; set; }
-        public string description { get; set; }
+        public string Name { get; set; }
+        protected DateTime ActivityDate { get; set; }
+        public decimal Cost { get; set; }
+        public Activity TypeOfActivity { get; set; }
+        public string Description { get; set; }
 
+        public int CompareTo(object obj)
+        {
+            Activity that = obj as Activity;
+            return this.ActivityDate.CompareTo(that.ActivityDate);
+
+
+        }
+
+        List<Activity> Activities = new List<Activity>();
     }
 
-
-    public Activity CompareTo (DateTime date)
-    {
-        this.CompareTo
-    }
 
 }
