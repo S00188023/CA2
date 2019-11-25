@@ -24,5 +24,10 @@ namespace CA2
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Activity activity1 = new Activity("Surfing", new DateTime(2019, 6, 1), 20m, ActivityType.Water, "Fun in the waves");
+        }
     }
 }
