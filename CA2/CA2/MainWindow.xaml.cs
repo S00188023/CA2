@@ -28,6 +28,10 @@ namespace CA2
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Activity activity1 = new Activity("Surfing", new DateTime(2019, 6, 1), 20m, ActivityType.Water, "Fun in the waves");
+            Activity activity2 = new Activity("Basketball", new DateTime(2019, 4, 20), 10m, ActivityType.Land, "KOBE!");
+            Activity activity3 = new Activity("Hot Air Balloon", new DateTime(2019, 7, 15), 60m, ActivityType.Air, "See all the views up in the air");
+            Activity activity4 = new Activity("Surfing", new DateTime(2019, 6, 1), 20m, ActivityType.Water, "Fun in the waves");
+            Activity activity1 = new Activity("Surfing", new DateTime(2019, 6, 1), 20m, ActivityType.Water, "Fun in the waves");
         }
     }
 }
