@@ -24,15 +24,18 @@ namespace CA2
             Description = description;
         }
 
+        public override string ToString()
+        {
+            return $"{Name} - {ActivityDate}";
+
+        }
+
         public int CompareTo(object obj)
         {
             Activity that = obj as Activity;
             return this.ActivityDate.CompareTo(that.ActivityDate);
-
-
         }
 
-        List<Activity> Activities = new List<Activity>();
     }
 
 
